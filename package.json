@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-seed",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Bruce 🏸 Gou <brucegou@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "build": "babel lib -d dist",
+    "start": "npm run build && nodemon dist/index.js"
+  }
+}
